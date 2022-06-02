@@ -3,13 +3,14 @@ package com.bezkoder.springjwt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 import com.bezkoder.springjwt.models.ERole;
 import com.bezkoder.springjwt.models.Role;
 import com.bezkoder.springjwt.repository.RoleRepository;
 
 @SpringBootApplication
-public class SpringBootSecurityJwtApplication {
+public class SpringBootSecurityJwtApplication extends  SpringBootServletInitializer {
 	
 
 	public static void main(String[] args) {
