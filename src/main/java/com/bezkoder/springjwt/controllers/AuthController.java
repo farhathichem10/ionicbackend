@@ -129,6 +129,10 @@ public class AuthController {
  	public Optional<User> getalluser(@PathVariable("id")int id){
  		return  userRepository.findById(id);
  	}
+  @GetMapping("/getbonjour")
+	public String getBonjour(){
+		return  "bonjour";
+	}
  
   
  
